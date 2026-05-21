@@ -5,6 +5,7 @@
 Headings prefixed with an empty comment `%% %%` (note the space between the percent signs) are always collapsed when opening a note. If you expand them and then navigate away, they will automatically collapse again. The plugin also hides this empty comment when exiting Source mode.
 
 Example:
+
 `#### %% %% Heading`
 
 ### Installation
