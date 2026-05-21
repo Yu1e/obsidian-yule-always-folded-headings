@@ -2,7 +2,7 @@
 
 ## 🇬🇧 English
 
-Headings prefixed with an empty comment `%% %%` (note the space between the percent signs) are always collapsed when opening a note. If you expand them and then navigate away, they will automatically collapse again. The plugin also hides this empty comment when exiting Source mode.
+Headings prefixed with an empty comment ` %% %% ` (note the spaces) are always collapsed when opening a note. If you expand them and then navigate away, they will automatically collapse again. The plugin also hides this empty comment when exiting Source mode.
 
 Example:
 
@@ -17,7 +17,7 @@ Available exclusively via **BRAT** or **direct file copying**.
 
 ## 🇷🇺 Русский
 
-Заголовки, в начало которых добавлен пустой комментарий %% %% (пробел между двойными процентами), всегда свёрнуты при открытии заметки. Если их раскрыть и потом выйти из заметки, будут снова показаны свёрнутыми при следующем входе в заметку. Плагин также скрывает этот пустой комментарий при выходе из режима Source.
+Если в начало заголовка добавлен пустой комментарий ` %% %% ` (пробелы между двойными процентами, до и после них), такие заголовки всегда свёрнуты при открытии заметки. Если их раскрыть и потом выйти из заметки, будут снова показаны свёрнутыми при следующем входе в заметку. Плагин также скрывает этот пустой комментарий при выходе из режима Source.
 
 **Пример заголовка:**
 
