@@ -2,8 +2,12 @@ name: Release
 
 on:
   push:
-    tags:
-      - "*"
+    branches:
+      - main
+    paths:
+      - manifest.json
+      - .github/workflows/release.yml
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -14,12 +18,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Create release
+      - name: Create release for manifest version
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          tag="${GITHUB_REF#refs/tags/}"
-          gh release create "$tag" \
-            --title="$tag" \
+          version=$(jq -r .version manifest.json)
+          if gh release view "$version" >/dev/null 2>&1; then
+            echo "Release $version already exists, skipping."
+            exit 0
+          fi
+          gh release create "$version" \
+            --target "$GITHUB_SHA" \
+            --title "$version" \
             --generate-notes \
             main.js manifest.json
