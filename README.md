@@ -8,6 +8,12 @@ Example:
 
 `#### %% %% Heading`
 
+Headings whose text starts with a hyphen are always collapsed too. The hyphen stays visible.
+
+Example:
+
+`### -Heading`
+
 ### Installation
 Available exclusively via **BRAT** or **direct file copying**.
 
@@ -24,6 +30,12 @@ Available exclusively via **BRAT** or **direct file copying**.
 **Пример заголовка:**
 
 `#### %% %% Заголовок`
+
+Заголовки, текст которых начинается с дефиса, тоже всегда свёрнуты. Дефис остаётся видимым.
+
+**Пример заголовка:**
+
+`### -Заголовок`
 
 ### Установка
 Доступен только через плагин **BRAT** или **прямое копирование файлов**.

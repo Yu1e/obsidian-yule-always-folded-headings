@@ -108,7 +108,7 @@ module.exports = class CreaseDashHeaders extends Plugin {
 
     for (let i = 1; i <= doc.lines; i++) {
       const line = doc.line(i);
-      if (/^#{1,6}\s+%%\s+%%/.test(line.text)) {
+      if (/^#{1,6}\s+(?:%%\s+%%|-)/.test(line.text)) {
         const range = foldable(cm.state, line.from, line.to);
         if (range) {
           effects.push(foldEffect.of(range));
